@@ -9,4 +9,6 @@ You can download the Fonts "TAC-Barathi.ttf" for your system. It available [Here
 
 
 
+# More Details
 
+to see more details [click  here](https://github.com/ThaniThamizhAkarathiKalanjiyam/IsaiyiniKeyboard/wiki)
