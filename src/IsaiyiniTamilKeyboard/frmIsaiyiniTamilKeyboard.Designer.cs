@@ -37,20 +37,21 @@
             this.lblCaretY = new System.Windows.Forms.Label();
             this.txtCaretX = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblLang = new System.Windows.Forms.Label();
             this.lblCaretX = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.switchToToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tamilToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.englishToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.aToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.lblLang = new System.Windows.Forms.Label();
             this.encodingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.taceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.unicodeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.label1 = new System.Windows.Forms.Label();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -144,6 +145,30 @@
             this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Enabled = false;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(164, 27);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(51, 20);
+            this.label1.TabIndex = 12;
+            this.label1.Text = "Tamil";
+            // 
+            // lblLang
+            // 
+            this.lblLang.AutoSize = true;
+            this.lblLang.BackColor = System.Drawing.Color.Transparent;
+            this.lblLang.Enabled = false;
+            this.lblLang.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLang.Location = new System.Drawing.Point(213, 27);
+            this.lblLang.Name = "lblLang";
+            this.lblLang.Size = new System.Drawing.Size(51, 20);
+            this.lblLang.TabIndex = 11;
+            this.lblLang.Text = "Tamil";
+            // 
             // lblCaretX
             // 
             this.lblCaretX.AutoSize = true;
@@ -172,7 +197,8 @@
             this.switchToToolStripMenuItem,
             this.toolStripSeparator1,
             this.aToolStripMenuItem,
-            this.helpToolStripMenuItem});
+            this.helpToolStripMenuItem,
+            this.exitToolStripMenuItem});
             this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
             this.settingsToolStripMenuItem.Size = new System.Drawing.Size(58, 20);
             this.settingsToolStripMenuItem.Text = "Settings";
@@ -189,16 +215,21 @@
             // tamilToolStripMenuItem
             // 
             this.tamilToolStripMenuItem.Name = "tamilToolStripMenuItem";
-            this.tamilToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.tamilToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
             this.tamilToolStripMenuItem.Text = "Tamil";
             this.tamilToolStripMenuItem.Click += new System.EventHandler(this.tamilToolStripMenuItem_Click);
             // 
             // englishToolStripMenuItem
             // 
             this.englishToolStripMenuItem.Name = "englishToolStripMenuItem";
-            this.englishToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.englishToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
             this.englishToolStripMenuItem.Text = "English";
             this.englishToolStripMenuItem.Click += new System.EventHandler(this.englishToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(149, 6);
             // 
             // aToolStripMenuItem
             // 
@@ -213,23 +244,6 @@
             this.helpToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.helpToolStripMenuItem.Text = "Help";
             // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(149, 6);
-            // 
-            // lblLang
-            // 
-            this.lblLang.AutoSize = true;
-            this.lblLang.BackColor = System.Drawing.Color.Transparent;
-            this.lblLang.Enabled = false;
-            this.lblLang.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLang.Location = new System.Drawing.Point(213, 27);
-            this.lblLang.Name = "lblLang";
-            this.lblLang.Size = new System.Drawing.Size(51, 20);
-            this.lblLang.TabIndex = 11;
-            this.lblLang.Text = "Tamil";
-            // 
             // encodingToolStripMenuItem
             // 
             this.encodingToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -242,28 +256,23 @@
             // taceToolStripMenuItem
             // 
             this.taceToolStripMenuItem.Name = "taceToolStripMenuItem";
-            this.taceToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.taceToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
             this.taceToolStripMenuItem.Text = "Tace";
             this.taceToolStripMenuItem.Click += new System.EventHandler(this.taceToolStripMenuItem_Click);
             // 
             // unicodeToolStripMenuItem
             // 
             this.unicodeToolStripMenuItem.Name = "unicodeToolStripMenuItem";
-            this.unicodeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.unicodeToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
             this.unicodeToolStripMenuItem.Text = "Unicode";
             this.unicodeToolStripMenuItem.Click += new System.EventHandler(this.unicodeToolStripMenuItem_Click);
             // 
-            // label1
+            // exitToolStripMenuItem
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Enabled = false;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(164, 27);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(51, 20);
-            this.label1.TabIndex = 12;
-            this.label1.Text = "Tamil";
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // frmTooltip
             // 
@@ -312,6 +321,7 @@
         private System.Windows.Forms.ToolStripMenuItem taceToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem unicodeToolStripMenuItem;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
     }
 }
 

@@ -418,6 +418,11 @@ namespace CaretPosition
             label1.Text = objTamilWordNLP.TaEncoding.ToString();
         }
 
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
+
 
     }
 }
