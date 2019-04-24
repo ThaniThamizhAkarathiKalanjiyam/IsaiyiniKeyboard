@@ -18,7 +18,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>..\..\..\trunk\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -87,6 +87,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <Content Include="Assets\data\segment_mappings.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Assets\data\tace.map">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Assets\schemes\ITRANS_ta.scm">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -101,12 +107,24 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\data\lookups_dictionary.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\data\lookups_dictionary.v3.txt">
+    </Content>
+    <Content Include="Assets\data\user_dictionary.txt" />
     <Content Include="Assets\ITRANS.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\ITRANS_old.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IsaiyiniKeyboardService\IsaiyiniKeyboardService.csproj">
+      <Project>{521D76BE-1577-4A58-9D03-37D793C2E2B9}</Project>
+      <Name>IsaiyiniKeyboardService</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

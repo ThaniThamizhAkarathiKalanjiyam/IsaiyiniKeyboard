@@ -5,9 +5,10 @@ using System.Text;
 
 namespace CaretPosition
 {
-    enum TaEncoding
+    public enum TaEncodingE
     {
         UTF,
-        TACE
+        TACE,
+        ANSI
     }
 }

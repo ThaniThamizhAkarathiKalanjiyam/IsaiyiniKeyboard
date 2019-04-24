@@ -1,0 +1,15 @@
+D:\GitRepo\IsaiyiniKeyboard\trunk\Assets\data\segment_mappings.txt
+D:\GitRepo\IsaiyiniKeyboard\trunk\Assets\data\lookups_dictionary.txt
+D:\GitRepo\IsaiyiniKeyboard\trunk\Assets\ITRANS.txt
+D:\GitRepo\IsaiyiniKeyboard\trunk\Assets\ITRANS_old.txt
+D:\GitRepo\IsaiyiniKeyboard\trunk\Assets\data\tace.map
+D:\GitRepo\IsaiyiniKeyboard\trunk\Assets\schemes\ITRANS_ta.scm
+D:\GitRepo\IsaiyiniKeyboard\trunk\IsaiyiniTamilKeyboard.exe
+D:\GitRepo\IsaiyiniKeyboard\trunk\IsaiyiniTamilKeyboard.pdb
+D:\GitRepo\IsaiyiniKeyboard\branches\src\IsaiyiniTamilKeyboard\obj\Debug\ResolveAssemblyReference.cache
+D:\GitRepo\IsaiyiniKeyboard\branches\src\IsaiyiniTamilKeyboard\obj\Debug\CaretPosition.frmAboutBox.resources
+D:\GitRepo\IsaiyiniKeyboard\branches\src\IsaiyiniTamilKeyboard\obj\Debug\CaretPosition.frmTooltip.resources
+D:\GitRepo\IsaiyiniKeyboard\branches\src\IsaiyiniTamilKeyboard\obj\Debug\CaretPosition.Properties.Resources.resources
+D:\GitRepo\IsaiyiniKeyboard\branches\src\IsaiyiniTamilKeyboard\obj\Debug\IsaiyiniTamilKeyboard.csproj.GenerateResource.Cache
+D:\GitRepo\IsaiyiniKeyboard\branches\src\IsaiyiniTamilKeyboard\obj\Debug\IsaiyiniTamilKeyboard.exe
+D:\GitRepo\IsaiyiniKeyboard\branches\src\IsaiyiniTamilKeyboard\obj\Debug\IsaiyiniTamilKeyboard.pdb

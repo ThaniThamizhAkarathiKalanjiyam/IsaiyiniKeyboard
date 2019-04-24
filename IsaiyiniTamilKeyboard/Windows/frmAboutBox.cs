@@ -1,4 +1,20 @@
-﻿using System;
+﻿//////////////////////////////////////////////////////////////////////////
+//                                                                      //
+//  Anybody can Use, Modify, Redistribute this code freely. If this     // 
+//  module has been helpful to you then just leave a comment on Website //
+// Name:        IsaiyiniKeyboard
+// Purpose:	 Accessing the TACE keyboard easily
+//
+// Author:      Pitchaimuthu
+//
+// Created:     24/04/2019
+// Copyright:   (c) Pitchaimuthu 2019
+// Licence:     This work is licensed under a CCA 4.0 International License. 
+//              http://creativecommons.org/licenses/by/4.0/
+//                                                                      //
+//////////////////////////////////////////////////////////////////////////
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
@@ -8,9 +24,9 @@ using System.Windows.Forms;
 
 namespace CaretPosition
 {
-    partial class AboutBox : Form
+    partial class frmAboutBox : Form
     {
-        public AboutBox()
+        public frmAboutBox()
         {
             InitializeComponent();
             this.Text = String.Format("About {0} {0}", AssemblyTitle);

@@ -37,7 +37,7 @@
             this.lblCaretY = new System.Windows.Forms.Label();
             this.txtCaretX = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblEncoding = new System.Windows.Forms.Label();
             this.lblLang = new System.Windows.Forms.Label();
             this.lblCaretX = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
@@ -46,12 +46,16 @@
             this.tamilToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.englishToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.selectFontToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.lathaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tACBharathiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.aToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.encodingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.taceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.unicodeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -59,20 +63,20 @@
             // txtUserGivenWord
             // 
             this.txtUserGivenWord.BackColor = System.Drawing.Color.LightGoldenrodYellow;
-            this.txtUserGivenWord.Location = new System.Drawing.Point(3, 27);
+            this.txtUserGivenWord.Location = new System.Drawing.Point(0, 27);
             this.txtUserGivenWord.Name = "txtUserGivenWord";
-            this.txtUserGivenWord.Size = new System.Drawing.Size(159, 20);
+            this.txtUserGivenWord.Size = new System.Drawing.Size(209, 20);
             this.txtUserGivenWord.TabIndex = 9;
-            this.txtUserGivenWord.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBox1_KeyUp);
+            this.txtUserGivenWord.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtUserGivenWord_KeyUp);
             // 
             // lstBoxSuggestedWords
             // 
             this.lstBoxSuggestedWords.Font = new System.Drawing.Font("TAC-Barathi", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lstBoxSuggestedWords.FormattingEnabled = true;
             this.lstBoxSuggestedWords.ItemHeight = 16;
-            this.lstBoxSuggestedWords.Location = new System.Drawing.Point(-1, 53);
+            this.lstBoxSuggestedWords.Location = new System.Drawing.Point(0, 54);
             this.lstBoxSuggestedWords.Name = "lstBoxSuggestedWords";
-            this.lstBoxSuggestedWords.Size = new System.Drawing.Size(280, 68);
+            this.lstBoxSuggestedWords.Size = new System.Drawing.Size(209, 100);
             this.lstBoxSuggestedWords.TabIndex = 8;
             // 
             // lblCurrentApp
@@ -80,7 +84,7 @@
             this.lblCurrentApp.AutoSize = true;
             this.lblCurrentApp.BackColor = System.Drawing.Color.Transparent;
             this.lblCurrentApp.Enabled = false;
-            this.lblCurrentApp.Location = new System.Drawing.Point(0, 151);
+            this.lblCurrentApp.Location = new System.Drawing.Point(-2, 237);
             this.lblCurrentApp.Name = "lblCurrentApp";
             this.lblCurrentApp.Size = new System.Drawing.Size(132, 13);
             this.lblCurrentApp.TabIndex = 7;
@@ -88,18 +92,16 @@
             // 
             // timer1
             // 
-            this.timer1.Enabled = true;
-            this.timer1.Interval = 300;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // txtCaretY
             // 
             this.txtCaretY.BackColor = System.Drawing.Color.LightGoldenrodYellow;
             this.txtCaretY.Enabled = false;
-            this.txtCaretY.Location = new System.Drawing.Point(162, 128);
+            this.txtCaretY.Location = new System.Drawing.Point(114, 214);
             this.txtCaretY.Name = "txtCaretY";
             this.txtCaretY.ReadOnly = true;
-            this.txtCaretY.Size = new System.Drawing.Size(98, 20);
+            this.txtCaretY.Size = new System.Drawing.Size(85, 20);
             this.txtCaretY.TabIndex = 2;
             // 
             // lblCaretY
@@ -107,7 +109,7 @@
             this.lblCaretY.AutoSize = true;
             this.lblCaretY.BackColor = System.Drawing.Color.Transparent;
             this.lblCaretY.Enabled = false;
-            this.lblCaretY.Location = new System.Drawing.Point(127, 131);
+            this.lblCaretY.Location = new System.Drawing.Point(79, 217);
             this.lblCaretY.Name = "lblCaretY";
             this.lblCaretY.Size = new System.Drawing.Size(35, 13);
             this.lblCaretY.TabIndex = 4;
@@ -117,17 +119,17 @@
             // 
             this.txtCaretX.BackColor = System.Drawing.Color.LightGoldenrodYellow;
             this.txtCaretX.Enabled = false;
-            this.txtCaretX.Location = new System.Drawing.Point(29, 128);
+            this.txtCaretX.Location = new System.Drawing.Point(27, 214);
             this.txtCaretX.Name = "txtCaretX";
             this.txtCaretX.ReadOnly = true;
-            this.txtCaretX.Size = new System.Drawing.Size(98, 20);
+            this.txtCaretX.Size = new System.Drawing.Size(49, 20);
             this.txtCaretX.TabIndex = 1;
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.lblEncoding);
             this.panel1.Controls.Add(this.lblLang);
             this.panel1.Controls.Add(this.txtUserGivenWord);
             this.panel1.Controls.Add(this.lstBoxSuggestedWords);
@@ -140,22 +142,22 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(281, 170);
+            this.panel1.Size = new System.Drawing.Size(212, 186);
             this.panel1.TabIndex = 7;
             this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
             // 
-            // label1
+            // lblEncoding
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Enabled = false;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(164, 27);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(51, 20);
-            this.label1.TabIndex = 12;
-            this.label1.Text = "Tamil";
+            this.lblEncoding.AutoSize = true;
+            this.lblEncoding.BackColor = System.Drawing.Color.Transparent;
+            this.lblEncoding.Enabled = false;
+            this.lblEncoding.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEncoding.Location = new System.Drawing.Point(-1, 157);
+            this.lblEncoding.Name = "lblEncoding";
+            this.lblEncoding.Size = new System.Drawing.Size(51, 20);
+            this.lblEncoding.TabIndex = 12;
+            this.lblEncoding.Text = "Tamil";
             // 
             // lblLang
             // 
@@ -163,7 +165,7 @@
             this.lblLang.BackColor = System.Drawing.Color.Transparent;
             this.lblLang.Enabled = false;
             this.lblLang.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLang.Location = new System.Drawing.Point(213, 27);
+            this.lblLang.Location = new System.Drawing.Point(157, 157);
             this.lblLang.Name = "lblLang";
             this.lblLang.Size = new System.Drawing.Size(51, 20);
             this.lblLang.TabIndex = 11;
@@ -174,7 +176,7 @@
             this.lblCaretX.AutoSize = true;
             this.lblCaretX.BackColor = System.Drawing.Color.Transparent;
             this.lblCaretX.Enabled = false;
-            this.lblCaretX.Location = new System.Drawing.Point(1, 131);
+            this.lblCaretX.Location = new System.Drawing.Point(-1, 217);
             this.lblCaretX.Name = "lblCaretX";
             this.lblCaretX.Size = new System.Drawing.Size(28, 13);
             this.lblCaretX.TabIndex = 3;
@@ -187,7 +189,7 @@
             this.encodingToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(279, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(210, 24);
             this.menuStrip1.TabIndex = 10;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -196,6 +198,8 @@
             this.settingsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.switchToToolStripMenuItem,
             this.toolStripSeparator1,
+            this.selectFontToolStripMenuItem,
+            this.toolStripSeparator2,
             this.aToolStripMenuItem,
             this.helpToolStripMenuItem,
             this.exitToolStripMenuItem});
@@ -209,7 +213,7 @@
             this.tamilToolStripMenuItem,
             this.englishToolStripMenuItem});
             this.switchToToolStripMenuItem.Name = "switchToToolStripMenuItem";
-            this.switchToToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.switchToToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
             this.switchToToolStripMenuItem.Text = "Switch to";
             // 
             // tamilToolStripMenuItem
@@ -229,20 +233,53 @@
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(149, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(125, 6);
+            // 
+            // selectFontToolStripMenuItem
+            // 
+            this.selectFontToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.lathaToolStripMenuItem,
+            this.tACBharathiToolStripMenuItem});
+            this.selectFontToolStripMenuItem.Name = "selectFontToolStripMenuItem";
+            this.selectFontToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+            this.selectFontToolStripMenuItem.Text = "Select Font";
+            // 
+            // lathaToolStripMenuItem
+            // 
+            this.lathaToolStripMenuItem.Name = "lathaToolStripMenuItem";
+            this.lathaToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
+            this.lathaToolStripMenuItem.Text = "Latha";
+            // 
+            // tACBharathiToolStripMenuItem
+            // 
+            this.tACBharathiToolStripMenuItem.Name = "tACBharathiToolStripMenuItem";
+            this.tACBharathiToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
+            this.tACBharathiToolStripMenuItem.Text = "TAC - Bharathi";
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(125, 6);
             // 
             // aToolStripMenuItem
             // 
             this.aToolStripMenuItem.Name = "aToolStripMenuItem";
-            this.aToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.aToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
             this.aToolStripMenuItem.Text = "About";
             this.aToolStripMenuItem.Click += new System.EventHandler(this.aToolStripMenuItem_Click);
             // 
             // helpToolStripMenuItem
             // 
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
             this.helpToolStripMenuItem.Text = "Help";
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+            this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // encodingToolStripMenuItem
             // 
@@ -267,19 +304,12 @@
             this.unicodeToolStripMenuItem.Text = "Unicode";
             this.unicodeToolStripMenuItem.Click += new System.EventHandler(this.unicodeToolStripMenuItem_Click);
             // 
-            // exitToolStripMenuItem
-            // 
-            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.exitToolStripMenuItem.Text = "Exit";
-            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
-            // 
             // frmTooltip
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGoldenrodYellow;
-            this.ClientSize = new System.Drawing.Size(281, 170);
+            this.ClientSize = new System.Drawing.Size(212, 186);
             this.Controls.Add(this.panel1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -301,7 +331,6 @@
 
         #endregion
 
-        private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label lblCaretX;
         private System.Windows.Forms.Label lblCaretY;
         private System.Windows.Forms.Panel panel1;
@@ -320,8 +349,13 @@
         private System.Windows.Forms.ToolStripMenuItem encodingToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem taceToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem unicodeToolStripMenuItem;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblEncoding;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem selectFontToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem lathaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tACBharathiToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 
