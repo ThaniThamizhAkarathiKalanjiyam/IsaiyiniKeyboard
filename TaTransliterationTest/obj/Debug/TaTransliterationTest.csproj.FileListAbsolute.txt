@@ -1,0 +1,15 @@
+D:\GitRepo\IsaiyiniKeyboard\branches\src\TaTransliterationTest\bin\Debug\Assets\data\segment_mappings.txt
+D:\GitRepo\IsaiyiniKeyboard\branches\src\TaTransliterationTest\bin\Debug\Assets\data\lookups_dictionary.txt
+D:\GitRepo\IsaiyiniKeyboard\branches\src\TaTransliterationTest\bin\Debug\Assets\ITRANS.txt
+D:\GitRepo\IsaiyiniKeyboard\branches\src\TaTransliterationTest\bin\Debug\Assets\ITRANS_old.txt
+D:\GitRepo\IsaiyiniKeyboard\branches\src\TaTransliterationTest\bin\Debug\Assets\data\tace.map
+D:\GitRepo\IsaiyiniKeyboard\branches\src\TaTransliterationTest\bin\Debug\Assets\schemes\ITRANS_ta.scm
+D:\GitRepo\IsaiyiniKeyboard\branches\src\TaTransliterationTest\bin\Debug\tamil_words_list_utf8.csv
+D:\GitRepo\IsaiyiniKeyboard\branches\src\TaTransliterationTest\bin\Debug\test.csv
+D:\GitRepo\IsaiyiniKeyboard\branches\src\TaTransliterationTest\bin\Debug\TaTransliterationTest.exe
+D:\GitRepo\IsaiyiniKeyboard\branches\src\TaTransliterationTest\bin\Debug\TaTransliterationTest.pdb
+D:\GitRepo\IsaiyiniKeyboard\branches\src\TaTransliterationTest\bin\Debug\IsaiyiniTamilKeyboard.exe
+D:\GitRepo\IsaiyiniKeyboard\branches\src\TaTransliterationTest\bin\Debug\IsaiyiniTamilKeyboard.pdb
+D:\GitRepo\IsaiyiniKeyboard\branches\src\TaTransliterationTest\obj\Debug\ResolveAssemblyReference.cache
+D:\GitRepo\IsaiyiniKeyboard\branches\src\TaTransliterationTest\obj\Debug\TaTransliterationTest.exe
+D:\GitRepo\IsaiyiniKeyboard\branches\src\TaTransliterationTest\obj\Debug\TaTransliterationTest.pdb
